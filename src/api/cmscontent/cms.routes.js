@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const cmsContent = require("./cms.controller");
+const cmsContent = require("./cmscontroller");
 const config = require("../../config");
 
 var whitelist = ["35.169.94.138:3006"];
