@@ -1,4 +1,4 @@
-const { startConnection } = require("../../helpers/databaseConnection");
+const { startConnection } = require("../../helpers/databaseconnection");
 let connection = startConnection();
 
 class CmsContent {
@@ -56,5 +56,5 @@ class CmsContent {
   }
 }
 
-module.exports = CmsContent;
+module.exports = Cmscontent;
 
