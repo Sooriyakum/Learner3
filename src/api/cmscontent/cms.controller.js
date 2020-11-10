@@ -1,5 +1,5 @@
-const CmsContent = require("./cms.model");
-const { endConnection } = require("../../helpers/databaseConnection");
+const cmscontent = require("./cms.model");
+const { endConnection } = require("../../helpers/databaseconnection");
 const chalk = require("chalk");
 const config = require("../../config");
 const fs = require("fs");
@@ -36,7 +36,7 @@ const getFreedom = async (req, res, next) => {
     if (device && device.id) {
       let check = await comparingObj(req);
       if (check) {
-        result = await CmsContent.getFreedom(
+        result = await cmscontent.getFreedom(
           body.select,
           body.tableName,
           body.condition,
@@ -47,7 +47,7 @@ const getFreedom = async (req, res, next) => {
         result = false;
       }
     } else {
-      result = await CmsContent.getFreedom(
+      result = await cmscontent.getFreedom(
         body.select,
         body.tableName,
         body.condition,
