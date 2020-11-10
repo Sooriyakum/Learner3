@@ -1,7 +1,7 @@
 const { startConnection } = require("../../helpers/databaseconnection");
 let connection = startConnection();
 
-class CmsContent {
+class cmscontent {
   static addMaster(tableName, value) {
     return new Promise((resolve, reject) => {
       connection.query(
@@ -56,5 +56,5 @@ class CmsContent {
   }
 }
 
-module.exports = Cmscontent;
+module.exports = cmscontent;
 
