@@ -1,7 +1,7 @@
   
 const { Router } = require('express');
 
-const cmsContent = require('./api/cmscontent/cms.routes');
+const cmscontent = require('./api/cmscontent/cms.routes');
 
 const router = Router();
 
@@ -11,6 +11,6 @@ router.get('/', (req, res) => {
   res.end();
 });
 
-router.use('/cmscontent', cmsContent);
+router.use('/cmscontent', cmscontent);
 
 module.exports = router;
