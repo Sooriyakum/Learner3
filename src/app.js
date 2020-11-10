@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 // Database connection
-require("./helpers/databaseConnection");
+require("./helpers/databaseconnection");
 // require('./helpers/redisConnection');
 
 // Initialize server
