@@ -1,7 +1,7 @@
   
 const { Router } = require('express');
 
-const cmsContent = require('./api/cmsContent/cms.routes');
+const cmsContent = require('../api/cmsContent/cms.routes');
 
 const router = Router();
 
