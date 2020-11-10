@@ -53,11 +53,11 @@ const corsOptionsDelegate = (req, res, next) => {
 //   .put(corsOptionsDelegate, cmsContent.updateMaster)
 //   .delete(corsOptionsDelegate, cmsContent.deleteMaster);
 
-router.route("/sandbox/test").get(cmsContent.sandboxtest);
+router.route("/sandbox/test").get(cmscontent.sandboxtest);
 
 router
   .route("/getFullFreedom/getFreedom/:tableName?")
-  .put(cmsContent.getFreedom);
+  .put(cmscontent.getFreedom);
 
 module.exports = router;
 
