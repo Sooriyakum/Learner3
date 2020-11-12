@@ -7,6 +7,9 @@ const request = require("request");
 const moment = require("moment");
 const path = require("path");
 
+require('dotenv').config();
+const nodemailer = require('nodemailer');
+
 const rootPath = path.dirname(
   require.main.filename || process.mainModule.filename
 );
