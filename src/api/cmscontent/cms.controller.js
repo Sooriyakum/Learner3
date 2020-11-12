@@ -83,20 +83,20 @@ const sendmail = (req,res,next) =>{
 var sender = nodemailer.createTransport(
 {
   host: "0.0.0.0",
-  port: 25255,
+  port: 25257,
 service:'gmail',
 auth:
 {
-user:'xx368528@gmail.com',
-pass:'maha@1999'
+user:'sooriyakumar1897@gmail.com',
+pass:'kabilash@2011'
 }
 });
 
 var composemail ={
-from:'xx368528@gmail.com',
-to:'mahalakshmid50@gmail.com',
-subject:'maha',
-text:'hi'
+from:'sooriyakumar1897@gmail.com',
+to:'kabisuri1234@gmail.com',
+subject:'suri',
+text:'hello'
 };
 
 sender.sendMail(composemail,function(error,info){
